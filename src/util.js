@@ -66,7 +66,7 @@ export const emotionList = [
 ]
 
 
-export const getMonthRageByDate = (date) => {
+export const getMonthRangeByDate = (date) => {
     const beginTimeStamp = new Date(date.getFullYear(), date.getMonth(), 1).getTime();
     const endTimeStamp = new Date(
         date.getFullYear(),
