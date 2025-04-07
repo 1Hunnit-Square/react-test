@@ -1,5 +1,5 @@
 import './App.css';
-import {Routes, Route, Link} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import React, {useReducer, useRef, useEffect, useState } from "react";
 import Home from "./pages/Home";
 import New from "./pages/New";
@@ -42,24 +42,24 @@ function reducer(state, action) {
     }
 }
 
-const mockData = [
-    {
-        id: "mock1",
-        date: new Date().getTime(),
-        content: "mock1",
-        emotionId: 1
-    }, {
-        id: "mock2",
-        date: new Date().getTime(),
-        content: "mock2",
-        emotionId: 2
-    }, {
-        id: "mock3",
-        date: new Date().getTime(),
-        content: "mock3",
-        emotionId: 1
-    }
-];
+// const mockData = [
+//     {
+//         id: "mock1",
+//         date: new Date().getTime(),
+//         content: "mock1",
+//         emotionId: 1
+//     }, {
+//         id: "mock2",
+//         date: new Date().getTime(),
+//         content: "mock2",
+//         emotionId: 2
+//     }, {
+//         id: "mock3",
+//         date: new Date().getTime(),
+//         content: "mock3",
+//         emotionId: 1
+//     }
+// ];
 
 function App() {
     const [isDataLoaded, setIsDataLoaded ] = useState(false);
